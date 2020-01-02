@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+background-color: #F0F1F2;
+}
+
+header {
+  background-color: #2b2b2b;
+  height: 67px;
+}
+
+a {
+  color: #999999;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.fl {
+  float: left;
+}
+
+/*左边浮动 */
+.fr {
+  float: right;
+}
+
+/* 右边浮动 */
+.left img {
+  height: 67px;
+}
+
+.right img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+header .navbar>li {
+  color: #999999;
+  font-family: 黑体;
+  font-size: 1.2em;
+  font-style: bold;
+  margin: 0 25px;
+  line-height: 67px;
+  /* 设置line属性对于父级上下居中,和父级的高度相同 */
+  cursor: pointer;
+}
+
+header .navbar>li:hover .nav-a{
+  color: #fff;
+}
+
+header .navbar>li:hover .sub{
+  display: block;
+}
+
+header .navbar .sub {
+  background-color: #2b2b2b;
+  opacity: 0.9;
+  line-height: 1.8em;
+  width: 180px;
+  border-radius: 0 0 5px 5px;
+  position: absolute;
+  display: none;
+  padding-bottom: 10px;
+}
+
+header .navbar .sub li{
+  font-family:黑体;
+  font-size: 0.9em;
+}
+
+header .navbar .sub li:hover{
+  background-color: #444444;
+}
+
+header .navbar .sub li:hover a{
+color:#fff;
+}
+
+header .sub a{
+  padding: 10px;
+}
+
+.left, .right {
+  margin: 0 40px;
+}
+
+/* ******************************************************************** */
+
+.sub-header{
+  background-color:#E4ECF4;
+  text-align: center;
+    font-size: 1.2em;
+}
+
+
+.sub-header li{
+  display: inline-block;
+  margin: 15px 30px;
+
+}
