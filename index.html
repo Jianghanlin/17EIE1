@@ -7,24 +7,102 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="master.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <style>
+    @keyframes move {
+      0% {
+        transform:
+          translateX(0%);
+      }
+
+      20% {
+        transform: translateX(0%);
+      }
+
+      25% {
+        transform: translateX(-500px);
+      }
+
+      45% {
+        transform: translateX(-500px);
+      }
+
+      50% {
+        transform: translateX(-1000px);
+      }
+
+      70% {
+        transform: translateX(-1000px);
+      }
+
+      75% {
+        transform: translateX(-1500px);
+      }
+
+      95% {
+        transform: translateX(-1500px);
+      }
+
+      100% {
+        transform: translateX(-2000px);
+      }
+
+    }
+
+    .wrap {
+      width: 500px;
+      height: 320px;
+      position: relative;
+      margin: 50px auto;
+      border: 5px solid #f00;
+      overflow: hidden;
+    }
+
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    img {
+      vertical-align: top;
+      border: none;
+    }
+
+    .list {
+      width: 500%;
+      animation: move 7s linear infinite
+    }
+
+    .list li {
+      float: left;
+      width: 500px;
+      height: 320px;
+    }
+
+    .list img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 
 <body>
-  <header>
+  <a href="#top">
+    <img class="totop" src="img/top.png" alt="">
+  </a>
+  <header id="top">
     <div class="left">
       <img class="fl" src="img/17电子1导航logo.png" alt="">
       <ul class="fl navbar">
-        <li class="fl l1">
-          <a href="#" class="nav-a">班级简述</a>
+        <li class="fl l1"> <a href="#1" class="nav-a">班级简述</a>
           <ul class="sub">
-            <li><a href="#">班级历史</a></li>
-            <li><a href="#">班级成员</a></li>
-            <li><a href="#">班规</a></li>
+            <li><a href="#lishi">班级历史</a></li>
+            <li><a href="#chengyuan">班级成员</a></li>
+            <li><a href="#bangui">班规</a></li>
           </ul>
         </li>
-        <li class="fl l2">
-          <a href="#" class="nav-a">班委</a>
+        <li class="fl l2"> <a href="#2" class="nav-a">班委</a>
           <ul class="sub">
             <li><a href="https://jianghanlin.github.io" target="_blank">班长：江瀚林</a></li>
             <li><a href="#">团支书：黄瑞曼</a></li>
@@ -33,10 +111,8 @@
             <li><a href="#">生活委员：蔺传玉</a></li>
             <li><a href="#">组织委员：俞泽锦</a></li>
           </ul>
-        </li>
-        <!-- float属性不占队列，根据声明顺序进行排列 -->
-        <li class="fl l3">
-          <a href="#" class="nav-a">生活动态</a>
+        </li> <!-- float属性不占队列，根据声明顺序进行排列 -->
+        <li class="fl l3"> <a href="#3" class="nav-a">生活动态</a>
           <ul class="sub">
             <li><a href="#">团支部建设</a></li>
             <li><a href="#">党员发展</a></li>
@@ -44,16 +120,14 @@
             <li><a href="#">班级动态</a></li>
           </ul>
         </li>
-        <li class="fl l4">
-          <a href="#" class="nav-a">班级周边</a>
+        <li class="fl l4"> <a href="#4" class="nav-a">班级周边</a>
           <ul class="sub">
             <li><a href="#">班级LOGO</a></li>
             <li><a href="#">班级壁纸</a></li>
             <li><a href="#">班服</a></li>
           </ul>
         </li>
-        <li class="fl l5">
-          <a href="#" class="nav-a">资源下载</a>
+        <li class="fl l5"> <a href="#" class="nav-a">资源下载</a>
           <ul class="sub">
             <li><a href="#"> (·_·) 功能维护中</a></li>
           </ul>
@@ -63,22 +137,406 @@
     </div>
     <div class="right">
       <ul class="fr navbar">
-        <li class="fr">
+        <li class="qq fr">
           <img src="img/qq.png" alt="">
+          <ul class="sub">
+            <li><img src="img/班群.jpg" alt=""></li>
+            <li><img src="img/通知群.jpg" alt=""></li>
+            <li><img src="img/学习群.jpg" alt=""></li>
+            <li><img src="img/专业群.jpg" alt=""></li>
+          </ul>
         </li>
-        <li class="fr"><img src="img/wechat.png" alt=""></li>
+        <li class="wechat fr"> <img src="img/wechat.png" alt="">
+          <ul class="sub">
+            <li><img src="img/weixin.jpg" alt=""></li>
+            <li><span>班级微信公众号</span></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </header>
-  <div class="sub-header">
-<ul>
-  <li><a href="#">111</a></li>
-  <li><a href="#">111</a></li>
-  <li><a href="#">111</a></li>
-  <li><a href="#">111</a></li>
-  <li><a href="#">111</a></li>
-</ul>
+  <div class="container">
+    <div class="photo"> <img src="img/1.png"> <img src="img/2.jpg"> <img src="img/3.jpg"> <img src="img/4.jpg"> <img src="img/5.jpg"> <img src="img/6.jpg"> <img src="img/7.jpg"> </div>
   </div>
+
+  <div class="sub-header1">
+    <ul>
+      <li id="1">班级简述</li>
+    </ul>
+  </div>
+  <div class="sub1">
+    <div class="sub1_1">
+      <h3 id="lishi"> <img class="p" src="img/foot.png" alt=""> <span>班级历史</span> </h3>
+
+      <div class="lishi">
+        <p>时代在召唤，一群充满活力的年轻人——17电子信息工程1班的同学们在美丽的科艺学院里演绎着一个个富有激情的青春故事
+          这是一个团结奋进、朝气蓬勃、温暖和谐的集体 25位来自五湖四海的学子，25张意气风发的笑脸，25颗热血澎湃的心汇集在这里为了梦想共同奋斗 </p>
+        <p>17电子信息工程1班于2017年10月成立2年多以来，在各位老师的关怀和班委的领导下，全班同学以“团结、和谐、文明、进取”为班级文化，团结一心、锐意进取，在各方面都交出了令人满意的答卷
+        </p>
+        <p>在班级建设上，我们争创一流 班级成立以来，举行各种例会、团组织生活十余次 认真完成系部布置的各项任务，组织班级团队活动
+          在学习上我们不输他人 虽然在系部选择专业时我们班的成绩不容乐观，但是经过我们努力奋斗最终改变原有的现状，取得了好成绩
+          在英语的学习上，我们班有多位同学表现优秀，为其他同学树立了良好的榜样，积极备战四六级考试；普通话二甲、计算机二级等证书的考取都取得了很好的成绩
+          在其他活动中，我们思想活跃的特点为我们建立了优势，我们班级结合专业知识，针对当代大学生就业难的问题，组建了职业生涯规划工作室，在专业老师的指导下为同学们提供较为专业的职业规划咨询；同学们积极参加各种比赛、讲座等活动
+          我们班委组织同学与教秘老师密切交流,带领大家到企业进行专业见习 </p>
+        <p>各种成绩的取得源于同学们的努力拼搏，我们的班级是一个汇集了各类型人才的班级 全班共有25名同学，其中男生19名，女生6名
+          这里面有学习好、工作能力强，德艺双馨的同学；有多位早早投入创业实践并取得小小成绩的未来“CEO”；有多位学生会、社团联合会等各种学生组织的学生干部；也有自强不息，已经基本经济独立的同学
+        </p>
+        <p>17电子信息工程1班就是这样一个优秀的集体
+          犹如大渡河流水，能滋润每一颗年轻跳跃的心；犹如巍巍雪山，为每一位同学一飞冲天积蓄力量；更犹如大海，汇集着跨世纪的大学生博学济世的理想！我们坚信，在辅导员老师的关心和班委的坚强领导下，将创造一个更辉煌的未来！</p>
+      </div>
+    </div>
+
+    <div class="sub1_2">
+      <h3 id="bangui"> <img class="p" src="img/bangui.png" alt=""> 班规 </h3>
+      <div class="bangui">
+        <p>17电子信息工程1班班级管理制度</p>
+        <p>为了给同学们创造一个愉快的学习和生活环境，使班级工作能够正常有序进行，使我班成为一个团结优秀的集体,特建立此班级管理制度 具体内容如下：</p>
+        <p> 一、班级日常管理制度</p>
+        <p>学习：</p>
+        <p>大学生的主要任务是学习,大家必须充分重视，努力做到 </p>
+        <p>1.按时上课,不迟到,不早退,不逃课 迟到三次者算旷课，无特殊原因旷课超过三次者将影响本学期考核成绩 </p>
+        <p>2.积极配合相应科代表的工作,认真完成作业,按时上交 </p>
+        <p>3.遵守课堂纪律,尊重老师,体现出大学生应有的风度 </p>
+        <p>4.上课期间不得随意走动、讲话,手机应该调成震动或静音 </p>
+        <p>5.有事请假者，需持班主任签字假条；临时有事者，告知学习委，事后补上假条
+        </p>
+        <p>卫生：宿舍是大学生活动的重要场所,宿舍卫生状况直接影响同学们的生活环境,因此,宿舍卫生必须保持： </p>
+        <p>1.宿舍内部要制定相应的卫生制度,实行责任个人制,宿舍长及班干部负责监督 </p>
+        <p>2.宿舍卫生每日打扫,值日生要尽职尽责,认真对待,为同学们创造整洁舒适的生活环境 </p>
+        <p>3.切实执行宿舍管理中心的各项规定,做好卫生打扫工作,认真对待卫生检查 </p>
+        <p>4.注重个人卫生 </p>
+        <p>活动 </p>
+        <p>因为班级、院、校开展各种各样的活动，故有以下规定： </p>
+        <p>1.对于班级组织的各项活动,同学们要热心关注，积极参与,共建一个团结界奋进的班级体 </p>
+        <p>2.同学们要积极的为班级发展献计献策,使本班的活动搞得有特色,有意义 </p>
+        <p>3.由班长组织每两周召开一次班会，对近期学习和生活情况进行讨论和总结 </p>
+        <p>4.有团支书组织每月定期开展团日活动,形成书面资料交至系辅导员 </p>
+        <p>5.对于系、院组织的活动,同学们也应认真对待,敢于挑战自我，为班级和个人的荣誉拼搏 </p>
+        <p>二、班级奖惩制度 </p>
+        <p>1、评优、评先依据《学生手册》进行评选 </p>
+        <p>2、推荐党校学员采取民主与集中相结合的原则进行评选 </p>
+        <p>3、在校为班级争得荣誉或在集体活动中表现突出的个人或团体，将推荐学院予以表彰，或予一定的物质奖励 </p>
+        <p>4、因个人原因使班级受到院级以上（包括院级）通报批评的个人或团队，取消其本学期评优、评先及参选资格 </p>
+        <p>5、凡考试中有舞弊行为的，经查证属实，取消本学期评优、评先及参选资格 </p>
+        <p>6、在班会及其他须到的班级活动中迟到、早退的同学将给予批评并根据实际情况进行惩罚 </p>
+        <p>7、班会无故缺席三次以上的同学，将予以批评，并影响其本学期考核成绩（需要点到的班级活动处理方式同上）
+          请假的同学需出请假条及相关证明，经班级辅导员或班长批准方可请假 </p>
+
+        <p>8、对有重大错误，影响班级荣誉的同学可考虑取消其助学金等各项资格 </p>
+        <p>9、每周由副班长对课堂的出勤情况进行检查，每周抽查一次，对是否旷课迟到将做记录并作为期末评优参考 </p>
+      </div>
+    </div>
+
+    <div class="sub1_3">
+      <h3 id="chengyuan"> <img class="p" src="img/chengyuan.png" alt=""> 班级成员 </h3>
+      <div class="chengyuan">
+        <div class="people"> <img src="img/Xb17610101.jpg" alt="">
+          <p>Name:蔡睿</p>
+          <p>Num:Xb17610101</p>
+        </div>
+        <div class="people"> <img src="img/Xb17610102.jpg" alt="">
+          <p> Name:丁凯煜
+          </p>
+          <p> Num:Xb17610102
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610103.jpg" alt="">
+          <p>Name:段振宇
+          </p>
+          <p>Num:Xb17610103
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610104.jpg" alt="">
+          <p>Name:方俊
+          </p>
+          <p>Num:Xb17610104
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610105.jpg" alt="">
+          <p>Name:高林俊
+          </p>
+          <p>Num:Xb17610105
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610106.jpg" alt="">
+          <p>Name:黄科
+          </p>
+          <p>Num:Xb17610106
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610107.jpg" alt="">
+          <p>Name:江瀚林
+          </p>
+          <p>Num:Xb17610107</p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610108.jpg" alt="">
+          <p>Name:李保羡
+          </p>
+          <p>Num:Xb17610108
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610109.jpg" alt="">
+          <p>Name:李仁杰
+          </p>
+          <p>Num:Xb17610109
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610110.jpg" alt="">
+          <p>Name:李思炜
+          </p>
+          <p>Num:Xb17610110
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610111.jpg" alt="">
+          <p>Name:蔺传玉
+          </p>
+          <p>Num:Xb17610111
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610113.jpg" alt="">
+          <p>Name:汪诗武
+          </p>
+          <p>Num:Xb17610113
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610114.jpg" alt="">
+          <p>Name:王浩安
+          </p>
+          <p>Num:Xb17610114
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610115.jpg" alt="">
+          <p>Name:王帏民
+          </p>
+          <p>Num:Xb17610115
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610116.jpg" alt="">
+          <p>Name:王益钦
+          </p>
+          <p>Num:Xb17610116
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610117.jpg" alt="">
+          <p>Name:武崇
+          </p>
+          <p>Num:Xb17610117
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610118.jpg" alt="">
+          <p>Name:徐建正
+          </p>
+          <p>Num:Xb17610118
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610120.jpg" alt="">
+          <p>Name:杨安健
+          </p>
+          <p>Num:Xb17610120
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610121.jpg" alt="">
+          <p>Name:俞泽锦
+          </p>
+          <p>Num:Xb17610121
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610122.jpg" alt="">
+          <p>Name:岑陆婷
+          </p>
+          <p>Num:Xb17610122
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610123.jpg" alt="">
+          <p>Name:黄瑞曼
+          </p>
+          <p>Num:Xb17610123
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610124.jpg" alt="">
+          <p>Name:刘露
+          </p>
+          <p>Num:Xb17610124
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610125.jpg" alt="">
+          <p>Name:陆周心
+          </p>
+          <p>Num:Xb17610125
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610126.jpg" alt="">
+          <p>Name:任彩娜
+          </p>
+          <p>Num:Xb17610126
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/Xb17610127.jpg" alt="">
+          <p>Name:赵唐悦
+          </p>
+          <p>Num:Xb17610127
+          </p>
+        </div>
+
+        <div class="people"> <img src="img/X201701026.jpg" alt="">
+          <p>Name:苏志勤
+
+          </p>
+          <p>Num:X201701026
+
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+  <div class="sub-header2">
+    <ul>
+      <li id="2">班委</li>
+    </ul>
+  </div>
+  <div class="project-wrap">
+    <div class="projects">
+      <div class="project1">
+        <a href="#">
+          <img src="img/电子秒表.jpg" alt="">
+        </a>
+        <div class="miaoshu1">
+          <a href="#">
+            <h3>基于STC89C52的电子秒表</h3>
+          </a>
+          <div class="zhaiyao">
+            <p>随着电子技术的发展，电子技术在各个领域的运用也越来越广泛，人们对它的认识也
+              逐步加深。电子秒表功能设计不断完善，时间设计上不断精确。电子秒表适用于对时间测
+              量精度要求较高的场合
+            </p>
+            <p> 此次课程设计利用型号为STC89C52RC 的单片机、8段共阳LED数码管等电子元器
+              件来实现简易不带存储功能的电子秒表</p>
+          </div>
+
+          <div class="keyword">
+            <span class="purple">#STC89C52RC单片机</span>
+            <span class="red">#共阳数码管</span>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="project2">
+        <a href="#">
+          <img src="img/温度测量放大器.jpg" alt="">
+        </a>
+        <div class="miaoshu1">
+          <a href="#">
+            <h3>电桥模拟PT100温度测量放大器</h3>
+          </a>
+          <div class="zhaiyao">
+            <p>数字温度计是一种精度高、稳定性好、适用性极强的新型现场温度显示仪。是传统现场指针双金属温度计的理想替代产品，广泛应用于各类工矿企业，大专院校，科研院所
+            </p>
+            <p>数字温度计采用温度敏感元件也就是温度传感器（如铂电阻、热敏电阻等），将温度的变化转换成电信号的变化，如电压和电流的变化。此次课程设计通过电桥模拟PT100来实现温度测量</p>
+          </div>
+
+          <div class="keyword">
+            <span class="purple">#温度测量</span>
+            <span class="red">#运算放大器</span>
+            <span class="orange">#电压比较器</span>
+          </div>
+
+        </div>
+      </div>
+      <div class="project3">
+        <a href="#">
+          <img src="img/步进电机.jpg" alt="">
+        </a>
+        <div class="miaoshu2">
+          <a href="#">
+            <h3>基于MSP430G2553控制四相步进电机</h3>
+          </a>
+          <div class="zhaiyao msp">
+            <p>步进电机的工作就是步进转动，要使步进电机转动，就必须对步进电机定子的各相绕组以适当的时序进行通电，从单片机引出4个I/O去控制即可。控制方法有：单四拍、双四拍、四相八拍
+            </p>
+            <p> 此次利用MSP430液晶扩展板上的4个按键KEY1、2、3、4分别作为步进电机启动/关闭，正转/反转，加速与减速。MSP430G2553上的P1.0、1.2、1.3、1.4轮流通电控制ULN2003的IN1、2、3、4达到间接控制四相步进电机的A、B、C、D的目的。P2.3、2.4、2.5来控制LED的状态。</p>
+          </div>
+
+          <div class="keyword">
+            <span class="purple">#MSP430G2553</span>
+            <span class="red">#四相步进电机</span>
+            <span class="orange">#ULN2003</span>
+          </div>
+
+        </div>
+      </div>
+      <div class="project4">
+        <a href="#">
+          <img src="img/电阻测量系统.jpg" alt="">
+        </a>
+        <div class="miaoshu2">
+          <a href="#">
+            <h3>基于MSP430G2553的电阻测量系统</h3>
+          </a>
+          <div class="zhaiyao">
+            <p>随着电子技术的发展，电子技术在各个领域的运用也越来越广泛，人们对它的认识也
+              逐步加深。电子秒表功能设计不断完善，时间设计上不断精确。电子秒表适用于对时间测
+              量精度要求较高的场合。
+            </p>
+            <p> 此次课程设计利用型号为STC89C52RC 的单片机，8 段共阳LED 数码管等电子元器
+              件来实现简易不带存储功能的电子秒表。</p>
+          </div>
+
+          <div class="keyword">
+            <span class="purple">#MSP430G2553</span>
+            <span class="red">#电阻测量</span>
+            <span class="orange">#恒流源</span>
+            <span class="green">#差分比例放大电路</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sub-header3">
+    <ul>
+      <li id="3">生活动态</li>
+    </ul>
+  </div>
+
+  <div class="sub-header4">
+    <ul>
+      <li id="4">班级周边</li>
+    </ul>
+  </div>
+
 </body>
+<div class="classlogo">
+  <img src="img/class.png" alt="">
+</div>
+<footer>
+  <p>Designed by Jianghanlin & Jarvis 2019 from 17 electronic information engineering 1</p>
+</footer>
 
 </html>
