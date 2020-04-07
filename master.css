@@ -266,7 +266,7 @@ header .sub a {
 .banzhang .me {
   width: 200px;
   margin:0 50px 0 30px;
-border-radius: 200px;
+border-radius: 20px;
   box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -319,7 +319,7 @@ width: 30px;
 
 /* *********************************************************************************************************** */
 .tuanzhishu img,.xuexi img,.xuanchuan img,.zuzhi img,.xinli img,.shenghuo img {
-border-radius: 200px;
+border-radius: 150px;
   box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.1);
   margin: 0 30px 0 20px;
 }
@@ -330,17 +330,17 @@ width:145px;
 }
 
 .xuexi img{
-  width:135px;
+  width:145px;
 }
 
 .xuanchuan img{
-  width:150px;
-  height: 160px;
+  width:140px;
+  height: 150px;
 }
 
 .zuzhi img{
-  width:120px;
-  height: 160px;
+  width:138px;
+  height: 140px;
 }
 
 .xinli img{
